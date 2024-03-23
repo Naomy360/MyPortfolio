@@ -1,0 +1,405 @@
+/*  universal box-sizing rule to make sizing easier */
+* {
+    box-sizing: border-box;
+}
+
+/* margin and font settings to the body */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #333 url('https://media4.giphy.com/media/TxVVB6PfWMjE4/giphy.gif?cid=6c09b95241ln0z3ehpmcmek2kkdhg1iucz7igjnjpma4fp6f&rid=giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+    color: #f0f0f0; /*  text color for better readability if needed */
+}
+
+.contact-info a {
+    color: #ffffff; /* Sets the icon color to white */
+    margin-right: 20px; /* Adds space to the right of each icon/link */
+    font-size: 1.5em; /* Increases the size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contact-info a:hover {
+    color: #ddd; /* Slightly darker shade of white for hover effect */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Style the navigation bar */
+nav {
+   
+    width: 100%;
+    display: flex;
+    justify-content:space-around; 
+    align-items: center; /* Vertically aligns items in the middle */
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+
+nav a {
+    color: #f7f7f7;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #cccccc;
+}
+
+/* Style the header with profile details */
+header.about-me-section {
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+
+.profile-details {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile-image-container {
+    flex: 1;
+    text-align: center;
+}
+.profile-image-container img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #f7f7f7;
+    object-fit: cover;
+}
+
+
+/* Style the skills section with card-like designs */
+.skills {
+    display: block; /* Change to block to allow for full height sections */
+    margin: 0;
+    padding: 0;
+}
+
+.skill {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    color: #f0f0f0;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    background: transparent; /* Ensure the background is transparent */
+}
+
+.skill:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.contact {
+    background: transparent;
+    color: #f7f7f7;
+    text-align: center; /*  centers the heading text */
+    padding: 40px 0;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+/* Adjust form structure */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form */
+}
+
+/* Style the form labels and input fields */
+.contact .form-group {
+    display: flex;
+    flex-direction: column; /* Stack the label and field */
+    margin-bottom: 15px; /* Add space between each form group */
+}
+
+.contact .form-group label {
+    align-self: flex-start; /* Align the labels to the start of the flex container */
+    margin-bottom: 5px; /* Add space below the label */
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%; /* Full width of their container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Specific style for the textarea to make it larger */
+.contact .form-group textarea {
+    height: 150px; /* Set a fixed height */
+}
+
+.contact button[type=".submit"] {
+    padding: 10px 20px;
+    margin-top: 10px; /* Add some space above the button */
+    width: auto; /* Auto width to fit the content */
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background: #444;
+}
+
+.hamburger-icon {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Move to the top right corner */
+    font-size: 30px; /* Adjust the size as needed */
+    background: none;
+    border: none;
+    color: #fff; /* or any color you wish */
+    cursor: pointer;
+    z-index: 5; /* Make sure it's above other content */
+  }
+  
+
+.coding-icons {
+    display: flex; /* Use flexbox to layout the rows */
+    flex-direction: column; /* Stack the rows vertically */
+    align-items: center; /* Center-align the rows horizontally */
+    gap: 15px; /* Adds a gap between the rows */
+  }
+  
+  .icon-row {
+    display: flex; /* Use flexbox to layout the icon containers within each row */
+    justify-content: center; /* Center the icon containers within each row */
+    flex-wrap: wrap; /* Allow the containers to wrap to the next line as needed */
+    gap: 15px; /* Adds a gap between the icon containers */
+  }
+  
+  .icon-container {
+    display: flex; /* Use flexbox to layout the icon and text */
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center-align the icon and text horizontally */
+    width: 80px; /* Set a fixed width for each icon container */
+  }
+  
+  .icon-container i {
+    font-size: 3em; /* Adjust the icon size as needed */
+    margin-bottom: 8px; /* Add space between the icon and the text */
+  }
+  
+  .icon-container span {
+    display: block; /* Ensure the span takes the full width of the container */
+    font-size: 0.75em; /* Adjust the text size as needed */
+    color: #ffffff; /* Set the text color */
+    text-align: center; /* Center the text */
+  }
+
+  @keyframes blinkCursor {
+    from { border-right-color: rgba(255, 255, 255, 0.75); }
+    to { border-right-color: transparent; }
+  }
+  
+  .typing {
+    font-size: 2em;
+    width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    animation: blinkCursor 0.75s steps(44) infinite;
+  }
+  
+.blog-section{
+    height: 100vh;
+    text-align: center;
+}
+ 
+  .swiper-container {
+    max-width: 100px; /* Set a max-width for the container */
+    margin: auto; /* Center the container */
+    position: relative; /* Needed for absolute positioning of children */
+  }
+  
+  /* Styles for each slide */
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 10; /* Ensure the buttons are above all other content */
+  }
+  
+  .swiper-button-next {
+    right: 10px; /* Adjust as necessary */
+  }
+  
+  .swiper-button-prev {
+    left: 10px; /* Adjust as necessary */
+  }
+  
+  /* Adjust the size and positioning of the blog title */
+  .blog-title {
+    text-align: center;
+    font-size: 1.5em; /* Increase the font size of the title */
+    color: #fff; /* Title text color */
+    margin-top: 15px; /* Spacing between image and title */
+  }
+  
+.swiper-slide {
+    /* Flexbox properties to center contents */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This centers the content vertically */
+    align-items: center; /* This centers the content horizontally */
+    text-align: center;
+  }
+  /* Make the image fit within the slide */
+  .swiper-slide img {
+    align-items: center;
+    max-width: 100%; /* Adjust the width of the image */
+    height: 450px; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+ 
+  #resume {
+    justify-content: flex-start; /* Align content to the top */
+    padding: 20px 0; /* Add some padding to the top and bottom */
+  }
+  
+  /* Styles for the resume image */
+  .resume-image {
+    max-width: 90%; /* Adjust the width of the image to fit within the section */
+    height: 500px; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some space between the image and the download link */
+  }
+  
+  @media (min-width: 1024px) {
+    .resume-image {
+      max-width: 800px; /* Set a max-width for the image on larger screens */
+      display: block; /* Display as block to apply margin auto */
+      margin: 20px auto; /* Center the image horizontally with some top and bottom margin */
+    }
+  }
+  
+  
+ 
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .swiper-container {
+        max-width: 90%; /* Adjust the max-width for smaller screens */
+      }
+    
+      .swiper-button-next,
+      .swiper-button-prev {
+        right: 10px; /* Position the next button */
+        left: 10px; /* Position the prev button */
+      }
+    
+      .blog-title {
+        font-size: 1em; /* Smaller font size for smaller screens */
+      }
+    
+      .hamburger-icon {
+        display: block; /* Show the hamburger icon on smaller screens */
+      }
+    
+      #navbar {
+        display: none; /* Hide the navigation menu initially */
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Adjust this value to position the menu below the hamburger icon */
+        right: 10px; /* Align the menu with the hamburger icon */
+        width: auto; /* Adjust the width as needed */
+        background-color: #222; /* Background color for mobile nav */
+      }
+    
+
+      #navbar a {
+        display: block; /* Stack the links */
+        text-align: left; /* Align the nav links to the left */
+        padding: 10px; /* Adjust the padding as needed */
+        color: #fff;
+      }
+    
+      #navbar.open {
+        display: flex; /* Show the navbar when the hamburger icon is clicked */
+      }
+    
+
+    .inline-form {
+        flex-direction: column;
+        align-items: stretch; /*
+       
+    }
+
+    .inline-form label {
+        width: auto; /* Auto width for labels on smaller screens */
+        text-align: left;
+        padding-right: 0; /* Remove the right padding */
+        margin-bottom: 5px; /* Space below the label */
+    }
+
+    .inline-form input,
+    .inline-form textarea {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+
+   
+    header.about-me-section {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center the content horizontally */
+        justify-content: center; /* Center the content vertically */
+        text-align: center;
+      }
+
+    .profile-details {
+        margin-top: 20px; /* Add space between the image and text */
+    }
+
+    .profile-image-container img {
+        width: 250px; /* Adjust the size of the image for smaller screens */
+        height: 250px; /* Adjust the size of the image for smaller screens */
+      }
+    
+    .hamburger-icon.hide {
+        display: none;
+    }
+}
+.footer {
+    background-color: #333; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    text-align: center; /* Center the content */
+    padding: 20px 0; /* Add some padding */
+  }
+  
+  .footer a {
+    color: #fff; /* Adjust the link color as needed */
+    margin-left: 20px; /* Add some space between the text and the link */
+  }
+  
