@@ -1,6 +1,7 @@
 # Naomy Chepngeno's Portfolio
 
-Welcome to my personal portfolio! 
+Welcome to my [personal portfolio!](https://naomy360.github.io/MyPortfolio/)
+
 
 ## About Me
 
