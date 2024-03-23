@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <title>Naomy Chepngeno Chesengeny - Personal Portfolio</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Hamburger Menu Icon -->
+    <button class="hamburger-icon" onclick="toggleMenu()">☰</button>
+    
+    <nav id="navbar">
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#beyond-coding">Beyond CS</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  
+  <header class="about-me-section" id="about">
+    <div class="profile-image-container">
+      <img src="IMG_1880.jpg" alt="Naomy Chepngeno Chesengeny" class="profile-image">
+    </div>
+    <div class="profile-details">
+
+      <h1 id="typing">Hey there, mate!</h1>
+      <p>
+        My name is Naomy, I'm a Computer Science major at Wesleyan University, set to graduate in December 2024. I am passionate about software development that is focused on creating functional, user-friendly, and impactful software. 
+      </p>
+      <p>
+        Beyond SWE, I like to spend my time doing Advocacy work, Creative Writing, and running. My interest in Computer Science was sparked by a desire to one day help provide technological solutions to underdeveloped communities, similar to the one  I grew up in in rural Kenya. I'm eager to bring my skills and enthusiasm to a software engineering role in a team dedicated to meaningful and innovative technological solutions.
+      </p>
+      <div class="contact-info">
+        <a href="https://github.com/Naomy360"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/naomy-chepngeno-chesengeny/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>  
+    </div>
+    
+    
+  </header>
+  <div class="coding-icons">
+    <!-- Row 1 -->
+    <div class="icon-row">
+      <div class="icon-container">
+        <i class="fab fa-python"></i>
+        <span>Python</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-cuttlefish"></i>
+        <span>C</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+      </div>
+      <div class="icon-container">
+        <i class="fas fa-code"></i>
+        <span>OCaml</span>
+      </div>
+      <div class="icon-container">
+        <i class="fas fa-laptop-code"></i>
+        <span>R</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-node-js"></i>
+        <span>Node.js</span>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="icon-row">
+      <div class="icon-container">
+        <i class="fab fa-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-php"></i>
+        <span>PHP</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-git-alt"></i>
+        <span>Git</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-react"></i>
+        <span>React</span>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <section class="skills" id="projects">
+    <div class="skill">
+      <h2>Projects</h2>
+      <p>Under Construction</p>
+    </div>
+    <div class="skill" id="resume">
+      <h2>Resume</h2>
+      <p>Check out my resume below:</p>
+      <img src="resume.JPG" alt="Naomy Chepngeno Resume" class="resume-image">
+      <a href="Naomy_Chepngeno_resume_nc.pdf" download="Naomy_Chepngeno_Resume">Download Resume (PDF)</a>
+    </div>
+    
+    <div class="blog-section",div class="skill", id="beyond-coding">
+      <h2>Beyond CS</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides with blog previews -->
+        
+          <div class="swiper-slide">
+            <a href="https://www.middlebury.edu/projects-for-peace/projects/2021/tujikaze-project" target="_blank">
+              <img src="./Tujikaze.jpg" alt="Multilingualwriting">
+              <div class="blog-title">Tujikaze Project</div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://nchesengeny.wescreates.wesleyan.edu/" target="_blank">
+              <img src="./blog1.JPG" alt="First Blog Title">
+              <div class="blog-title">
+                <a href="https://nchesengeny.wescreates.wesleyan.edu/" target="_blank" class="blog-link">From Kenya to Wesleyan: A journey of learning and Advocacy</a>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://multilingualwriting.wescreates.wesleyan.edu/uncategorized/naomy-chesengeny-english/" target="_blank">
+              <img src="./blog2.JPG" alt="Multilingualwriting">
+              <div class="blog-title">Multilingual Writing Project</div>
+            </a>
+          </div>
+          <!-- Repeat for each blog -->
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mqkrdjnk" method="POST">
+      <div class="form-group inline-form">
+        <label for="user_email">Name:</label>
+        <input type="text" id="user_email" name="name" required>
+      </div>
+      <div class="form-group inline-form">
+        <label for="user_email">Email:</label>
+        <input type="email" id="user_email" name="user_email" required>
+      </div>
+      <div class="form-group inline-form">
+        <label for="user_phone">Phone (Optional):</label>
+        <input type="tel" id="user_phone" name="user_phone">
+      </div>
+      <div class="form-group inline-form">
+        <label for="user_message">Message:</label>
+        <textarea id="user_message" name="user_message" required></textarea>
+      </div>        
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  </body>
+  <footer class="footer">
+    <p>Made by Naomy Chepngeno</p>
+    
+  </footer>
+  
