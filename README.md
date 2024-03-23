@@ -1,6 +1,6 @@
 # Naomy Chepngeno's Portfolio
 
-Welcome to my personal portfolio! This website showcases my skills, projects, and experiences in the field of computer science.
+Welcome to my personal portfolio! 
 
 ## About Me
 
