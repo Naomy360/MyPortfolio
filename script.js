@@ -47,7 +47,7 @@ function toggleMenu() {
         typeWriter('Hey there!', 'Hey there!'.length, true, (isRemoving) => {
           if (!isRemoving) {
             document.getElementById("typing").classList.add('typing');
-            typeWriter('Welcome to my little world!', 0, false, cursorBlink);
+            typeWriter('Welcome to my small world!', 0, false, cursorBlink);
           }
         });
       }
