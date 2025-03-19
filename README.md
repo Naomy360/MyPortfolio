@@ -9,11 +9,7 @@ I'm Naomy Chepngeno, a Computer Science major at Wesleyan University, set to gra
 
 ## Projects
 
-This portfolio includes a selection of my projects, demonstrating my skills in various areas of software development. Some highlights include:
-
-- **Project 1:** [Description of the project](Link to the project)
-- **Project 2:** [Description of the project](Link to the project)
-- **Project 3:** [Description of the project](Link to the project)
+This portfolio includes a selection of my projects, demonstrating my skills in various areas of software development. 
 
 ## Skills
 
