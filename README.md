@@ -13,7 +13,7 @@ This portfolio includes a selection of my projects, demonstrating my skills in v
 
 ## Skills
 
-- **Languages:** Python, C, JavaScript, OCaml, R, Node.js, HTML, CSS, PHP
+- **Languages:** Python, React, R, SQL, Node.js, HTML, CSS
 - **Tools & Technologies:** Git, GitHub, React
 
 ## Contact
